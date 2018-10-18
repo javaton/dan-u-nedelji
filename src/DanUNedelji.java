@@ -3,24 +3,21 @@ import java.util.Scanner;
 public class DanUNedelji {
 
 	public static void main(String[] arg) {
+		String [] danUNedelji = new String[7];
+		danUNedelji[0] = "NEDELJA";
+		danUNedelji[1] = "PONEDELJAK";
+		danUNedelji[2] = "UTORAK";
+		danUNedelji[3] = "SREDA";
+		danUNedelji[4] = "CETVRTAK";
+		danUNedelji[5] = "PETAK";
+		danUNedelji[6] = "SUBOTA";
+		
 		System.out.println("Unesite broj za koji zelite da izracunate dan?");
 		Scanner input = new Scanner(System.in);
 		int dan = input.nextInt();
 		dan = dan % 7;
-		if(dan == 1) {
-			System.out.println("Ponedeljak");
-		} else if(dan == 2) {
-			System.out.println("Utorak");
-		} else if (dan == 3) {
-			System.out.println("Sreda");
-		} else if(dan == 4) {
-			System.out.println("Cetvrtak");
-		} else if(dan == 5) {
-			System.out.println("Petak");
-		} else if(dan == 6) {
-			System.out.println("Subota");
-		} else {
-			System.out.println("Nedelja");
-		}
+		
+		System.out.println(danUNedelji[dan]);
+		
 	}
 }

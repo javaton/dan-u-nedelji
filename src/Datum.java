@@ -21,5 +21,16 @@ public class Datum {
 	public String datum() {
 		return dan+"."+mesec+"."+godina;
 	}
+	
+	public Boolean proveriDatum() {
+		// Ako je datum ispravan vraca true
+		//Ako nije ispravan vraca false
+		if(mesec >= 1 && mesec <= 12 && dan >= 1 && dan <=31) {
+			System.out.println("Datum je zadatom opsegu");
+			return true;
+		}
+		System.out.println("Datum nije u zadatom opsegu!");
+		return false;
+	}
 
 }
